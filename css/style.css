@@ -1,0 +1,924 @@
+
+/*---------------------------------*/
+/*BASIC SETUP */
+/*---------------------------------*/
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#space {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 83px;
+    display: block;
+}
+
+#space-2 {
+    margin-top: 82px;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 2px;
+    display: none;
+    background-color: rgba(237,84,133,0.8);
+    z-index: 1000;
+}
+
+
+
+/*---------------------------------*/
+/* LINEDROP  */  
+/*---------------------------------*/
+
+
+LineDrop {
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1005;
+	transition: opacity 0.5s;
+	
+}
+
+
+
+#form {
+    position: absolute;
+    background-color: rgba(255,255,255,1);
+    width: 40%;
+    height: auto;
+    margin: 100px 30% auto 30%;
+    border-radius: 5px;
+	z-index: 1006;
+}
+
+#form-logo {
+	border-bottom: 1px solid rgba(229,229,229);
+	width: auto;
+	height: 32px;
+	display: block;
+	padding: 10px;
+}
+
+#form-logo p,
+#form-logo i {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 23px;
+}
+
+#form-logo p {
+	float: left;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 2.5px;
+}
+
+#form-logo i {
+	float: right;
+	color: rgba(0,0,0,0.5);
+	font-weight: 1000;
+	cursor: pointer;
+}
+
+#form-logo i:hover {
+	color: rgba(0,0,0,0.8);
+}
+
+#context {
+	padding: 5px 10px;
+	width: auto;
+	display: block;
+}
+
+LineDrop bckg 
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.line-a-drop {
+	overflow: hidden;
+}
+
+.line-a-drop header LineDrop {
+	display: block;
+}
+
+.text-style {
+	font-family: "Maven Pro", sans-serif;
+	font-style: normal;
+}
+
+
+
+/*---- HOMES SECION ----*/
+
+
+.slogan {
+	width: 100%;
+	display: inline-block;
+	background-color: #34495E;
+	margin: 5% 0 0 0;
+}
+
+.slogan h1 {
+	text-align: center;
+	color: white;
+	font-size: 33px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	font-family: "Maven Pro", sans-serif;
+	font-style: normal;
+	padding: 0px 0px 1.25% 0;
+	margin: 2.5% 0 ;
+}
+
+.slogan h1:after {
+	display: block;
+	height: 1px;
+	background-color: white;
+	content: "";
+	width: 100px;
+	margin: 0 auto;
+	margin-top : 30px;
+}
+
+
+/*----BUTTONS----*/
+#button-text {
+	margin: 0px 20% 0 5%; 
+	padding: 4% 4%;
+	font-size: 2vw;
+}
+
+#button-id {
+	width: 90%;
+	height: auto;
+	margin: 0px 5% 0px 5%; 
+	padding: 5% 12.5%;
+	color: white;
+	font-size: 1.8vw;
+	box-shadow: none;
+}
+#button-tab {
+	margin: 20px 20%; 
+	padding: 2% 6%;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.button {
+	background-color: #ED5485;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: rgba(255,102,151,1);
+}
+
+.color-white {
+	color: white;
+}
+
+.input-style input {
+	padding: 10px 2.5%;
+	margin: 5px 0;
+	border-radius: 5px;
+	width: 95%;
+}
+
+.textarea-style {
+	padding: 10px 2.5%;
+	margin: 5px 0;
+	border-radius: 5px;
+	width: 95%;
+	height: 100px;
+}
+/*////////*/
+
+#send {
+	padding: 10px 0;
+	margin: 5px 0;
+}
+
+   /*---------------------------------*/
+/* HEADER  */
+/*---------------------------------*/
+
+header {
+	/*height: 640px;*/		
+}
+
+nav {
+	height: 83px;
+	width: 100%;
+	display: block;
+	position: fixed;
+	background-color: rgba(255,255,255,0.8);
+	z-index: 999;
+}
+
+.logo {
+	float: left ;
+    display: block;
+    text-align: center;
+}
+
+.logo img {
+	height: 60px;
+	margin: 11.5px  4.2vw;
+}
+
+#main-nav {
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#main-nav-button {
+	display: none;
+}
+
+#main-nav li {
+	display: inline-block;
+	float: left;
+	text-transform: uppercase;
+}
+
+#main-nav li a {
+	color: rgba(15, 16, 33, 0.7);
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 55px;
+	letter-spacing: 1px;
+	margin-right: 40px;
+	font-weight: 550;
+}
+#hero {
+	display: block;
+	float: right;
+	width: 68%;
+    height: auto;
+}
+
+#name {
+	display: inline-block;
+	float: left;
+	width: 30%;
+    height: auto;
+    margin-top: 8%;
+    border-top: 10px solid black;
+}
+#id-bckg {
+	display: block;
+	width: 95%;
+    height: auto;
+    margin: 0;
+    padding: 2.5%;
+    background-color: #EBF7FF;
+}
+.container {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 45%;
+    height: 35vw;
+    margin: 2.5%;
+}
+.slide-img{
+	position: absolute;
+	width: 100%;
+    height: 100%;
+}
+
+.slide-img img{
+	width: 100%;
+    height: 100%;
+}
+
+#p1 , #p2 , #p3 {
+	display: none;
+}
+
+.pre , .nxt {
+	width: 12%;
+	height: 14%;
+	position: absolute;
+	top: 44%;
+	z-index: 5;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.2);
+	border: 0.5vw rgba(255,255,255,0.5) solid;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 3vw;
+	color: white;
+}
+
+.pre i, .nxt i{
+	color: rgba(255, 255, 255, 0.699);
+	font-size: 150%;
+}
+
+.pre {
+	left: 0;	
+}
+
+.nxt {
+	right: 0;
+}
+
+.nav-dots {
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+}
+
+.dots {
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+
+.slide-img {
+	z-index: -1;
+	opacity: 0;
+}
+
+#p1:checked ~ #image-1,
+#p2:checked ~ #image-2,
+#p3:checked ~ #image-3{
+	z-index: 9;
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+#p1:checked ~ .nav-dots #dot1,
+#p2:checked ~ .nav-dots #dot2,
+#p3:checked ~ .nav-dots #dot3{
+	background: #fff;
+}
+
+#next-panel {
+	float: right;
+	display: inline-block;
+	width: 45%;
+    height: auto;
+    margin: 0;
+    padding: 2.5%;
+}
+
+#some-text-area {
+	display: block;
+	width: 100%; 
+}
+
+#some-text-area:after {
+	background-color: #E0E7E9;
+	display: block;
+	height: 1px;
+	width: 40%;
+	content: "";
+	margin-top: 20px;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+
+#next-panel div h1 {
+	color: #ED5485;
+	font-size: 40px;
+	font-weight: 400;
+	margin: 30px 0;
+}
+
+#next-panel div p,
+#house-details div p{
+	color: #6C727F;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 27px;
+}
+
+#house-details div {
+	display: inline-block;
+	width: 250px;
+	height: auto;
+	margin: 15px 20px 5px 20px;
+}
+
+#house-details div img{
+	width: 75px;
+	height: auto;
+}
+
+#other-name {
+	padding: 5.25%/*20px*/;
+}
+
+#other-name p {
+	font-size: 4.5vw;
+	line-height: 32%;
+	letter-spacing: 1px;
+	font-weight: 0;
+}
+#home-box {
+	margin: 3.75%;
+	display: block;
+}
+
+.section_homes {
+	margin: 1.25%;
+	float: left;
+	width: 47.5%;
+	display: block;
+}
+
+.img {
+	position: relative;
+	padding: 0;
+}
+
+.img a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.img a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.img ul {
+	padding: 2%  0;
+	width: 100%;
+	margin-bottom: 0;
+	position: absolute;
+    bottom: 0;
+    background-color: rgba(15,16,33,0.7);
+    color: white;
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+.img ul li {
+	float: left;
+	display: inline-block;
+	width: 25%;
+}
+
+.cost {
+	width: 100%;
+	height: 15%;
+	background-color: #EBF7FF;
+	padding: 0.25% 0;
+}
+
+.cost ul {
+ 	text-decoration: none;
+    list-style: none;
+    padding: 0 2.5%;
+    margin: 1%;
+}
+
+.cost ul li {
+	display: inline-block;
+	width: 35%;
+	border-right: 1px solid #7A808C;
+	color: rgba(0,0,0,0.7);
+	text-align: center;  
+	font-size: 2vw;
+}
+
+.cost ul a {
+	display: inline-block;
+	margin-left: 10%;
+	text-align: center;  
+	font-size: 2vw;
+	text-decoration: none;
+	color: #ED6793 ;
+}
+
+#house-details {
+	display: block;
+	width: auto;
+	height: auto;
+	text-align: center;
+	padding: 20px;
+}
+
+#house-details h1{
+	color: #0F1021;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#house-details h1:after {
+	display: block;
+	width: 8%;
+	height: 1px;
+	background-color: #E0E7E9;
+	content: "";
+	margin-top: 20px;
+	margin-right: 46%;
+	margin-left: 46%;
+}
+
+#realtor {
+	margin-top: 2.5%;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+#realtor div blockquote {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#realtor div blockquote cite img {
+	margin: 20% 50%;
+	padding: 0px;
+	width: 50%;
+	border-radius: 100%;
+	border: 3px solid white;
+	display: block;
+	text-align: center;
+}
+
+#realtor div blockquote cite {
+	width: 25%;
+	height: 100%;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-left: 22%;
+}
+
+#realtor  div blockquote div {
+	width: 25%;
+	height: 100%;
+	display: block;
+	float: left;
+	text-align: center;
+	font-weight: 400px;
+	color: white;
+	letter-spacing: 1px;
+
+}
+
+#realtor  div blockquote div p[id="realtor-box"]
+{
+	font-size: 2.5vw;
+}
+
+#realtor  div blockquote div p[id="realtor-box"]:after{
+	display: block;
+	height: 0.08vw;
+	background-color: white;
+	content: "";
+	width: 30%;
+	margin: 0 auto;
+	margin-top : 1.6vw;
+}
+
+#realtor  div blockquote div p[id="realtor-tel"] {
+	font-size: 1.6vw;
+	width: 70%;
+	margin: auto 15% 15% 15%;
+}
+
+#img-realtor {
+	display: block;
+	height: 23vw;
+	margin: 0px;
+	padding: 0px;
+	background-color: #34495E;
+}
+
+#text-id {
+	display: block;
+	height: 130px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #EBF7FF;
+}
+
+#text-id p{
+	margin: 0 5%;
+	padding-top: 3%;
+	line-height: 21px;
+	font-weight: 400;
+	font-size: 14px;
+	color: rgba(0,0,0,0.7);
+}
+
+#footer {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px 0 3% 0;
+	background-color: #34495E;
+}
+
+#lwhite {
+	float: left;
+	display: block;
+	width: 25%;
+	height: 100%;
+}
+
+#lwhite img{
+	display: block;
+	width: 48%;
+	text-align: center;
+	padding: 12% 26%;
+}
+
+#footer-text {
+	float: left;
+	width: 50%;
+	display: block;
+	height: 100%;
+	text-align: center;
+}
+
+#footer-text p[id="end"]{
+	float: left;
+	display: block;
+	width: 80%;
+	color: #A0A3A3;
+	font-size: 14px;
+}
+
+#footer-text p[id="end"]{
+	margin: 6% 10%;
+}
+
+#footer-text p[id="end"]:after{
+	display: block;
+	height: 1px;
+	background-color: #A0A3A3;
+	content: "";
+	width: 45%;
+	margin: 0 auto;
+	margin-top : 30px;
+}
+
+#footer-text p[id="author"] {
+	float: left;
+	display: block;
+	margin: 0% 30%;
+	width: 40%;
+	color: #A0A3A3;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+
+#footer-text p[id="author"] i{
+	color: #ED5485;
+}
+
+#footer div[id="contact"] {
+	float: left;
+	display: block;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+
+#contact a{
+	float: left;
+	display: inline-block;
+	width: 26%;
+	text-align: center;
+	text-decoration: none;
+	color: #A0A3A3;
+	margin: 12% 4%;
+	font-size: 14px;
+
+}
+
+
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row ) */
+@media (max-width: 1200px) { 
+    
+	#space-2 {
+			display: block;
+		}
+		
+	#main-nav {
+			display: none;
+			float: left;
+			width: 100%;
+			margin: 0;
+			padding: 8px;
+			padding-left: 52px;
+			padding-top: 16px;
+			text-align: left;
+			position: absolute;
+			background-color: rgba(52,73,94,0.8);
+		}
+		
+		.main-nav-block {
+			display: block;
+		}
+		
+		.main-nav-Noneblock {
+			display: none;
+		}
+		
+		#main-nav li {
+			display: block;
+			float: none;
+		}
+		
+		#main-nav li a{
+			color: rgba(255,255,255,1);
+		}
+		
+		#main-nav-button {
+			display: inline-block;
+			float: right;
+			margin: 20px 30px;
+			font-size: 40px;
+			cursor: pointer;
+		}
+		
+		.container{
+			width: 90%;
+			margin: 5%;
+			height: 70vw;
+		}
+		
+		#next-panel {
+			float: none;
+			display: inline-block;
+			width: 90%;
+			padding: 5%;
+		}
+		
+		.pre , .nxt {
+			border: 1vw rgba(255,255,255,0.5) solid;
+		}
+		
+		.pre i, .nxt i{
+			font-size: 300%;
+		}
+		
+		}
+
+
+
+/*Small phones to small tablets: from 481px  to 767px*/
+		
+		@media (max-width: 760px) { 
+		
+		.slogan h1 {
+			font-size: 20px;
+		}
+		
+		.section_homes {
+			margin: 2.5%;
+			width: 95%;
+		}
+		
+		#form {
+			width: 80%;
+			margin: 100px 10% auto 10%;
+		}
+		
+		}
+		
+		@media (max-width: 650px) { 
+		
+		#img-realtor {
+			display: block;
+			height: 36.5vw;
+			margin: 0px;
+			padding: 0px;
+			background-color: #34495E;
+		}
+		
+		#realtor div blockquote cite img {
+			margin: 10% 25%;
+			padding: 0px;
+			width: 50%;
+			border-radius: 100%;
+			border: 3px solid white;
+			display: block;
+			text-align: center;
+		}
+		
+		#realtor div blockquote cite{
+			width: 50%;
+			height: 100%;
+			display: block;
+			text-align: center;
+			margin: auto auto;
+		}
+		
+		#realtor div blockquote div {
+			width: 35%;
+			height: 100%;
+			display: block;
+			float: left;
+			text-align: center;
+			font-weight: 400px;
+			color: white;
+			letter-spacing: 1px;
+			margin: 0 7.5% 
+		}
+		
+		#realtor div blockquote div p[id="realtor-box"]
+		{
+			font-size: 3.5vw;
+		}
+		
+		#realtor div blockquote div p[id="realtor-box"]:after{
+			display: block;
+			height: 0.08vw;
+			background-color: white;
+			content: "";
+			width: 50%;
+			margin: 0 auto;
+			margin-top : 1.6vw;
+		}
+		
+		#realtor div blockquote div p[id="realtor-tel"] {
+			font-size: 2.5vw;
+			width: 90%;
+			margin: auto 5% 15% 5%;
+		}
+		
+	
+		
+		#lwhite img{
+			display: block;
+			width: 48%;
+			text-align: center;
+			padding: 12% 26%;
+			margin-top: 48%;
+		}
+		
+		#contact a{
+			width: 50%;
+			margin: 25% 25%;
+		}
+		
+		}
+		
+		#sticky-nav {
+		background-color: rgba(62,82,102,0.8);
+		z-index: 999;
+		width: 100%;
+		}
+		
+		#sticky-nav ul li a{
+		color: white;
+	}
+	
+
+
+	
